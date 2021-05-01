@@ -1,0 +1,140 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+
+    <style>
+        body{
+         
+            display: grid;
+            background-image: url(image/member.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        
+        .mid {
+            margin-top: 5px;
+            display: grid;
+            grid-template-columns:  auto auto auto auto auto;
+            justify-content: center;
+
+        }
+        .mid a{
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+            color: white; 
+            
+        } 
+        .mid  a:hover
+        {
+            /*            border-radius: 15px;
+                        background-color: black;
+                        color: white;*/
+            font-weight: bold;
+
+        }
+
+        .container h1{
+
+            text-align: center;
+        }
+        .form-group tr td{
+
+            margin-top: 24px;
+        }
+        .container{
+            text-align: center;
+        }
+        .container h1{
+            margin-left: 0px;
+        }
+        
+        .form-group tr td{
+            color: white;
+            font-size: 25px;
+        }
+
+        .form-group .txt{
+           
+            border-radius: 6px;
+            margin: auto ;
+            padding: 5px;
+            font-size: 20px;
+        }
+        
+        .form-group input {
+             width: 200px;
+            margin: auto;
+            border-radius: 6px;
+        }
+        .male input{
+            width: 30px;
+        }
+        .btn{
+
+            padding: 10px;
+            margin-left: -965px;
+        }
+        .btn button:hover{
+            border-radius: 8px;
+            color: blue;
+            background-color: white;
+        }
+    </style>
+
+    <body>
+        <div class="mid">
+            <a href="index.html" >Home</a> 
+            <a href="Membership.html" >Membership</a>
+            <a href="Videos.html">Gym Videos</a>
+            <a href="Contact.html">Contact Us</a>
+        </div>
+
+        <div class="container">
+            <h1 style="color: white">Join the Best Gym of Indore</h1>
+            <form id="myform" action="Website" method="post" >
+
+                <div class="form-group">
+                    <table>
+                        <tr>
+                            <td> Enter your name :</td>
+                            <td class="txt"><input type="text" name="usname" placeholder="NAME"></td>
+                        </tr>
+                        <tr>
+                            <td> Enter your Age:</td>
+                            <td class="txt"><input type="text" name="usage" placeholder="AGE"></td> 
+                        </tr>
+
+                        <tr>
+                            <td> Enter your address:</td>
+                            <td class="txt"><input type="text" name="usaddress" placeholder="ADDRESS"></td> 
+                        </tr>
+                        <tr>
+                            <td> Enter your Email :</td>
+                            <td class="txt"><input type="email" name="usemail" placeholder="EMAIL"></td> 
+                        </tr>
+
+                        <tr>
+                            <td >Select Gender </td>
+                            <td class="male" ><input type="radio" name="usgender" value="Male">&nbsp;Male&nbsp;<input type="radio" name="usgender" value="Female">&nbsp;Female</td> 
+                        </tr>
+
+                    </table>
+                    <div class="btn" >
+                        <button type="text">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </body>
+</html>
