@@ -10,15 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Orelega+One&display=swap" rel="stylesheet">
     <style>
-         #main{
+         .column {
             width: 100%;
-            height: 100vh;
-            position: relative;
+        }
+
+
+        @media (min-width: 600px) {
+            .column {
+                width: 100%;
+            }
         }
         body{
             display: grid;
             opacity: 0.9;
-            background-image: url(https://source.unsplash.com/1600x900/?workout);
+            background-image: url(image/2.jpg);
             background-repeat: no-repeat;
            
             background-size: cover;
@@ -83,7 +88,7 @@
         <div class="mid">
             <a href="index.html" >Home</a> 
             <a href="Membership.html" >Membership</a>
-            <a href="Videos.html">Gym Videos</a>
+<!--            <a href="Videos.html">Gym Videos</a>-->
             <a href="Contact.html">Contact Us</a>
         </div>
         <div class="nav">Click On For Videos</div>
